@@ -1,0 +1,1 @@
+C:\mednafen-server-0.5.0\mednafen-server.exe C:\mednafen-server-0.5.0\standard.conf
