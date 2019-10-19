@@ -35,16 +35,22 @@
             this.portText = new System.Windows.Forms.TextBox();
             this.nickText = new System.Windows.Forms.TextBox();
             this.gamekeyText = new System.Windows.Forms.TextBox();
-            this.hostLabel = new System.Windows.Forms.Label();
             this.nickLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectGameMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.homepageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutMednafenRNOEditonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.netplayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.netplayDiscordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateEmulatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,19 +77,20 @@
             // hostText
             // 
             this.hostText.Enabled = false;
-            this.hostText.Location = new System.Drawing.Point(300, 71);
+            this.hostText.Location = new System.Drawing.Point(115, 116);
             this.hostText.Name = "hostText";
             this.hostText.Size = new System.Drawing.Size(156, 20);
             this.hostText.TabIndex = 3;
+            this.hostText.Text = "netplay.fobby.net";
             // 
             // portText
             // 
             this.portText.Enabled = false;
-            this.portText.Location = new System.Drawing.Point(467, 71);
+            this.portText.Location = new System.Drawing.Point(170, 116);
             this.portText.Name = "portText";
             this.portText.Size = new System.Drawing.Size(63, 20);
             this.portText.TabIndex = 4;
-            this.portText.TextChanged += new System.EventHandler(this.portText_TextChanged);
+            this.portText.Text = "4046";
             // 
             // nickText
             // 
@@ -96,27 +103,15 @@
             // gamekeyText
             // 
             this.gamekeyText.Enabled = false;
-            this.gamekeyText.Location = new System.Drawing.Point(161, 116);
+            this.gamekeyText.Location = new System.Drawing.Point(300, 68);
             this.gamekeyText.Name = "gamekeyText";
             this.gamekeyText.Size = new System.Drawing.Size(230, 20);
             this.gamekeyText.TabIndex = 6;
-            this.gamekeyText.Text = "retro-nintendo-online";
-            this.gamekeyText.TextChanged += new System.EventHandler(this.gamekeyText_TextChanged);
-            // 
-            // hostLabel
-            // 
-            this.hostLabel.AutoSize = true;
-            this.hostLabel.Location = new System.Drawing.Point(280, 73);
-            this.hostLabel.Name = "hostLabel";
-            this.hostLabel.Size = new System.Drawing.Size(20, 13);
-            this.hostLabel.TabIndex = 7;
-            this.hostLabel.Text = "IP:";
-            this.hostLabel.Click += new System.EventHandler(this.hostLabel_Click);
             // 
             // nickLabel
             // 
             this.nickLabel.AutoSize = true;
-            this.nickLabel.Location = new System.Drawing.Point(261, 43);
+            this.nickLabel.Location = new System.Drawing.Point(256, 43);
             this.nickLabel.Name = "nickLabel";
             this.nickLabel.Size = new System.Drawing.Size(38, 13);
             this.nickLabel.TabIndex = 9;
@@ -124,7 +119,7 @@
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(13, 103);
+            this.startButton.Location = new System.Drawing.Point(13, 97);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(517, 45);
             this.startButton.TabIndex = 11;
@@ -135,7 +130,9 @@
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileMenuItem});
+            this.fileMenuItem,
+            this.helpToolStripMenuItem,
+            this.netplayToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(548, 24);
@@ -155,7 +152,7 @@
             // 
             this.selectGameMenuItem.Name = "selectGameMenuItem";
             this.selectGameMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.selectGameMenuItem.Text = "Select game";
+            this.selectGameMenuItem.Text = "Open ROM";
             this.selectGameMenuItem.Click += new System.EventHandler(this.selectGameMenuItem_Click);
             // 
             // exitMenuItem
@@ -164,44 +161,91 @@
             this.exitMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitMenuItem.Text = "Exit";
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.homepageToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.aboutMednafenRNOEditonToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // homepageToolStripMenuItem
+            // 
+            this.homepageToolStripMenuItem.Name = "homepageToolStripMenuItem";
+            this.homepageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.homepageToolStripMenuItem.Text = "Homepage";
+            this.homepageToolStripMenuItem.Click += new System.EventHandler(this.homepageToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Text = " ──────────────";
+            // 
+            // aboutMednafenRNOEditonToolStripMenuItem
+            // 
+            this.aboutMednafenRNOEditonToolStripMenuItem.Name = "aboutMednafenRNOEditonToolStripMenuItem";
+            this.aboutMednafenRNOEditonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutMednafenRNOEditonToolStripMenuItem.Text = "About Mednafen";
+            // 
+            // netplayToolStripMenuItem
+            // 
+            this.netplayToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.netplayDiscordToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.updateEmulatorToolStripMenuItem});
+            this.netplayToolStripMenuItem.Name = "netplayToolStripMenuItem";
+            this.netplayToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.netplayToolStripMenuItem.Text = "Netplay";
+            // 
+            // netplayDiscordToolStripMenuItem
+            // 
+            this.netplayDiscordToolStripMenuItem.Name = "netplayDiscordToolStripMenuItem";
+            this.netplayDiscordToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.netplayDiscordToolStripMenuItem.Text = "Netplay Discord";
+            this.netplayDiscordToolStripMenuItem.Click += new System.EventHandler(this.netplayDiscordToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(182, 22);
+            this.toolStripMenuItem3.Text = "──────────────────";
+            // 
+            // updateEmulatorToolStripMenuItem
+            // 
+            this.updateEmulatorToolStripMenuItem.Name = "updateEmulatorToolStripMenuItem";
+            this.updateEmulatorToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.updateEmulatorToolStripMenuItem.Text = "Update Emulator";
+            this.updateEmulatorToolStripMenuItem.Click += new System.EventHandler(this.updateEmulatorToolStripMenuItem_Click);
+            // 
             // gameTextBox
             // 
             this.gameTextBox.Enabled = false;
             this.gameTextBox.Location = new System.Drawing.Point(48, 38);
             this.gameTextBox.Name = "gameTextBox";
-            this.gameTextBox.Size = new System.Drawing.Size(194, 20);
+            this.gameTextBox.Size = new System.Drawing.Size(172, 20);
             this.gameTextBox.TabIndex = 13;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(457, 73);
+            this.label1.Location = new System.Drawing.Point(228, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(10, 13);
+            this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 14;
-            this.label1.Text = ":";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(48, 64);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 27);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Host Netplay";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label1.Text = "Game Code:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 169);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.startButton);
+            this.ClientSize = new System.Drawing.Size(548, 150);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.startButton);
             this.Controls.Add(this.gameTextBox);
             this.Controls.Add(this.nickLabel);
-            this.Controls.Add(this.hostLabel);
             this.Controls.Add(this.gamekeyText);
             this.Controls.Add(this.nickText);
             this.Controls.Add(this.portText);
@@ -212,7 +256,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Form1";
-            this.Text = "Mednafen - RNO Edition (10/18/19)";
+            this.Text = "Mednafen - RNO Edition (10/19/19)";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -227,7 +271,6 @@
         private System.Windows.Forms.TextBox portText;
         private System.Windows.Forms.TextBox nickText;
         private System.Windows.Forms.TextBox gamekeyText;
-        private System.Windows.Forms.Label hostLabel;
         private System.Windows.Forms.Label nickLabel;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.MenuStrip menuStrip;
@@ -236,7 +279,14 @@
         private System.Windows.Forms.ToolStripMenuItem selectGameMenuItem;
         private System.Windows.Forms.TextBox gameTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem homepageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem aboutMednafenRNOEditonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem netplayToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem netplayDiscordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem updateEmulatorToolStripMenuItem;
     }
 }
 

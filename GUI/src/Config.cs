@@ -32,7 +32,7 @@ namespace BugGUI
 
         public Config()
         {
-            ConfigFileName = "bugdata.dat";
+            ConfigFileName = "config.dat";
 
 #if false
             if(File.Exists(ConfigFileName))

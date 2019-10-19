@@ -37,7 +37,7 @@ namespace BugGUI
 
         void startButton_Click(object sender, EventArgs e)
         {
-            if(SelectedGamePath != null || SelectedGamePath != "")
+            if (SelectedGamePath != null || SelectedGamePath != "")
             {
                 string argv = "";
 #if DEBUG
@@ -53,10 +53,10 @@ namespace BugGUI
                     "-netplay.gamekey"
                 };
 
-                if(netplayCheckBox.Checked)
+                if (netplayCheckBox.Checked)
                 {
                     ArgvStringBuilder.Append(" -connect");
-                    for(int i = 0;
+                    for (int i = 0;
                         i < NetplayTextBoxes.Length;
                         ++i)
                     {
@@ -73,7 +73,7 @@ namespace BugGUI
 
                 argv = ArgvStringBuilder.ToString();
                 ArgvStringBuilder.Clear();
-                
+
                 Process mednafen = Process.Start(mednafenPath, argv);
                 mednafen.WaitForExit();
             }
@@ -86,7 +86,7 @@ namespace BugGUI
         void netplayCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox box = (CheckBox)sender;
-            for(int i = 0;
+            for (int i = 0;
                 i < NetplayTextBoxes.Length;
                 ++i)
             {
@@ -99,7 +99,7 @@ namespace BugGUI
             GameListForm = new GameListForm(Config);
             GameListForm.FormClosing += (s, args) =>
             {
-                if(GameListForm.SelectedGame != null)
+                if (GameListForm.SelectedGame != null)
                 {
                     SelectedGamePath = GameListForm.SelectedGame.FullName;
                     gameTextBox.Text = GameListForm.SelectedGame.FileName;
@@ -112,25 +112,25 @@ namespace BugGUI
             Hide();
         }
 
-        private void hostLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void portText_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gamekeyText_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Process.Start("netstart.bat");
 
+        }
+
+        private void homepageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://nintendonetplay.ml/");
+        }
+
+        private void netplayDiscordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://discord.gg/DZHusb2");
+        }
+
+        private void updateEmulatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("AutoUpdater.bat");
         }
     }
 }

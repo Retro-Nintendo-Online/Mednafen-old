@@ -1,0 +1,5 @@
+C:\Users\Parker\Documents\GitHub\retro-nintendo-online\Mednafen\PadGUI\joypad\obj\Release\MedPad.vbprojAssemblyReference.cache
+C:\Users\Parker\Documents\GitHub\retro-nintendo-online\Mednafen\PadGUI\joypad\obj\Release\MedPad.MedPad.resources
+C:\Users\Parker\Documents\GitHub\retro-nintendo-online\Mednafen\PadGUI\joypad\obj\Release\MedPad.Resources.resources
+C:\Users\Parker\Documents\GitHub\retro-nintendo-online\Mednafen\PadGUI\joypad\obj\Release\MedPad.vbproj.GenerateResource.cache
+C:\Users\Parker\Documents\GitHub\retro-nintendo-online\Mednafen\PadGUI\joypad\obj\Release\MedPad.vbproj.CoreCompileInputs.cache
