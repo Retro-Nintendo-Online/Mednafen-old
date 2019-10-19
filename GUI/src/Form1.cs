@@ -132,5 +132,11 @@ namespace BugGUI
         {
             Process.Start("AutoUpdater.bat");
         }
+
+        private void aboutMednafenRNOEditonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 m = new Form2();
+            m.Show();
+        }
     }
 }

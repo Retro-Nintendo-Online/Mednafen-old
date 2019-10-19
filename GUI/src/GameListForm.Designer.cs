@@ -51,6 +51,7 @@
             // addDirectoryButton
             // 
             this.addDirectoryButton.Location = new System.Drawing.Point(244, 13);
+            this.addDirectoryButton.MaximumSize = new System.Drawing.Size(75, 23);
             this.addDirectoryButton.Name = "addDirectoryButton";
             this.addDirectoryButton.Size = new System.Drawing.Size(75, 23);
             this.addDirectoryButton.TabIndex = 2;
@@ -118,6 +119,9 @@
             this.Controls.Add(this.addDirectoryButton);
             this.Controls.Add(this.directoryList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(515, 489);
+            this.MinimumSize = new System.Drawing.Size(515, 489);
             this.Name = "GameListForm";
             this.Text = "Select a Game";
             ((System.ComponentModel.ISupportInitialize)(this.gamesGridView)).EndInit();

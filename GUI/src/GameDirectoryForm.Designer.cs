@@ -126,6 +126,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(499, 188);
+            this.MinimumSize = new System.Drawing.Size(499, 188);
             this.Name = "GameDirectoryForm";
             this.Text = "Select Games Directory";
             this.Load += new System.EventHandler(this.GameDirectoryForm_Load);

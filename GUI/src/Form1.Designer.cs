@@ -151,14 +151,14 @@
             // selectGameMenuItem
             // 
             this.selectGameMenuItem.Name = "selectGameMenuItem";
-            this.selectGameMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.selectGameMenuItem.Size = new System.Drawing.Size(133, 22);
             this.selectGameMenuItem.Text = "Open ROM";
             this.selectGameMenuItem.Click += new System.EventHandler(this.selectGameMenuItem_Click);
             // 
             // exitMenuItem
             // 
             this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitMenuItem.Size = new System.Drawing.Size(133, 22);
             this.exitMenuItem.Text = "Exit";
             // 
             // helpToolStripMenuItem
@@ -174,21 +174,22 @@
             // homepageToolStripMenuItem
             // 
             this.homepageToolStripMenuItem.Name = "homepageToolStripMenuItem";
-            this.homepageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.homepageToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.homepageToolStripMenuItem.Text = "Homepage";
             this.homepageToolStripMenuItem.Click += new System.EventHandler(this.homepageToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(164, 22);
             this.toolStripMenuItem2.Text = " ──────────────";
             // 
             // aboutMednafenRNOEditonToolStripMenuItem
             // 
             this.aboutMednafenRNOEditonToolStripMenuItem.Name = "aboutMednafenRNOEditonToolStripMenuItem";
-            this.aboutMednafenRNOEditonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutMednafenRNOEditonToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.aboutMednafenRNOEditonToolStripMenuItem.Text = "About Mednafen";
+            this.aboutMednafenRNOEditonToolStripMenuItem.Click += new System.EventHandler(this.aboutMednafenRNOEditonToolStripMenuItem_Click);
             // 
             // netplayToolStripMenuItem
             // 
@@ -255,6 +256,9 @@
             this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(564, 189);
+            this.MinimumSize = new System.Drawing.Size(564, 189);
             this.Name = "Form1";
             this.Text = "Mednafen - RNO Edition (10/19/19)";
             this.menuStrip.ResumeLayout(false);
