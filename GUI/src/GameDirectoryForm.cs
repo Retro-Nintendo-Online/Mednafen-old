@@ -166,5 +166,10 @@ namespace BugGUI
         {
 
         }
+
+        private void pathBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
