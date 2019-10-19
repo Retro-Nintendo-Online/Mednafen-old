@@ -36,13 +36,12 @@ move mednafen-server.exe ..\
 move netstart.bat ..\
 move SCPH5501.BIN ..\
 move SDL2.dll ..\
-cd ..\
-rmdir master /s /q
-DEL master.zip
-DEL .wget-hsts
-cd temp
 move mednafen.cfg ..\
 move config.dat ..\
+cd ..\
+rmdir master /s /q
+DEL master.7z
+DEL .wget-hsts
 rmdir temp /s/ q
 start mednafen-netplay.exe
 
