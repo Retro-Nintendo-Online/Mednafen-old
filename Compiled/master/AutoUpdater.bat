@@ -7,9 +7,10 @@ if /I "%c%" EQU "N" goto :Exit
 goto :Exit
 
 :Start
-TASKKILL /IM Project64.exe /F
-wget.exe https://github.com/Retro-Nintendo-Online/Mednafen/raw/source/master.zip
-7z x master.zip -y
+TASKKILL /IM mednafen.exe /F
+TASKKILL /IM mednafen-netplay.exe /F
+wget.exe https://github.com/Retro-Nintendo-Online/Mednafen/raw/master/master.7z
+7z x master.7z -y
 mkdir temp
 move mednafen.cfg temp
 move config.dat temp
